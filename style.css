@@ -101,3 +101,164 @@ footer p {
     font-size: 16px;
     font-weight: 500;
 }
+
+.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 60px 80px;
+    gap: 40px;
+}
+
+
+.sobre-mim p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 90%;
+}
+
+
+.linha {
+    width: 60px;
+    height: 4px;
+    background-color: black;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+
+.sobre-mim, .habilidades {
+    flex: 1;
+    min-width: 300px;
+}
+
+
+.sobre-mim h2, .habilidades h2 {
+    font-size: 32px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+
+.habilidades ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.habilidades li {
+    font-size: 18px;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+
+.habilidades li::before {
+    content: "҃✓";
+    position: absolute;
+    left: 0;
+    color: black;
+}.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 60px 80px;
+    gap: 40px;
+}
+
+
+.sobre-mim p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 90%;
+}
+
+
+.linha {
+    width: 60px;
+    height: 4px;
+    background-color: black;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+
+.sobre-mim, .habilidades {
+    flex: 1;
+    min-width: 300px;
+}
+
+
+.sobre-mim h2, .habilidades h2 {
+    font-size: 32px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+
+.habilidades ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.habilidades li {
+    font-size: 18px;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+
+.habilidades li::before {
+    content: "҃✓";
+    position: absolute;
+    left: 0;
+    color: black;
+}
+/* --- Responsividade para Celular (Telas menores que 768px) --- */
+@media screen and (max-width: 768px) {
+    
+    /* 1. Muda o layout principal de lado-a-lado para coluna */
+    .inicio {
+        flex-direction: column;
+        height: auto; /* Remove a altura fixa de 100vh para permitir rolagem */
+    }
+
+    /* 2. Ajusta a área da foto */
+    .foto {
+        padding: 40px 0; /* Dá um respiro em cima e embaixo da foto */
+        width: 100%;
+    }
+
+    .foto img {
+        width: 200px; /* Diminui um pouco a foto no mobile */
+    }
+
+    /* 3. Ajusta o espaçamento e alinhamento do texto inicial */
+    .infos {
+        padding: 40px 20px; /* Reduz o padding lateral exagerado */
+        align-items: center; /* Centraliza os itens */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .infos h1 {
+        font-size: 32px; /* Diminui o tamanho do título */
+    }
+
+    .social {
+        justify-content: center; /* Centraliza os ícones sociais */
+    }
+
+    /* 4. Ajusta as seções Sobre e Experiências */
+    .sobre, .experiencias {
+        padding: 40px 20px; /* Reduz padding lateral de 80px para 20px */
+        flex-direction: column; /* Garante que fiquem um abaixo do outro */
+    }
+
+    .sobre-mim, .habilidades, .formacao, .experiencia {
+        width: 100%; /* Garante que ocupem a largura total */
+        min-width: auto;
+    }
+}
