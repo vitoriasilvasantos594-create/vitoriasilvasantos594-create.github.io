@@ -86,3 +86,18 @@ body {
     color: #444;
     background-color: gray;
 }
+
+footer {
+    background-color: #444;
+    color: rgb(121, 120, 120);
+    text-align: center;
+    padding: 20px;
+}
+
+
+footer p {
+    margin: 0;
+    font-family: "Libre Baskerville", serif;
+    font-size: 16px;
+    font-weight: 500;
+}
